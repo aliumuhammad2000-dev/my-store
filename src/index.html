@@ -5,26 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body>
   <header>
-    <nav class="flex items-center justify-between md:justify-around w-full px-5 py-2.5 overflow-hidden">
+    <nav class="flex items-center justify-between md:justify-around w-full px-5 py-3 overflow-auto">
         <div>
             <h1 class="text-3xl font-serif font-semibold">MyStore</h1>
         </div>
         <ul class="hidden md:flex text-sm font-serif gap-9">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Home</a></li>
+            <li class="underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Categories</a></li>
+            <li class="underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Shop</a></li>
+            <li class="underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">About</a></li>
+            <li class="underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Contact</a></li>
         </ul>
-        <ul class="fixed hidden items-center justify-center text-sm font-serif left-0 top-0 bg-white px-4 py-4 shadow-2xl w-1/2 h-full z-50 rounded-2xl">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="fixed hidden items-center justify-center right-0 top-15 bg-white px-4 py-4 shadow-2xl w-1/2 h-full z-50 rounded-l-2xl">
+            <ul class="text-2xs font-serif">
+                <li class="py-4 px-4 underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Home</a></li>
+                <li class="py-4 px-4 underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Categories</a></li>
+                <li class="py-4 px-4 underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Shop</a></li>
+                <li class="py-4 px-4 underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">About</a></li>
+                <li class="py-4 px-4 underline underline-offset-8 decoration-transparent transition-all duration-300 ease-in-out hover:decoration-blue-500 hover:scale-110"><a href="#">Contact</a></li>
+            </ul>
+        </div>
 
         <div class="flex gap-5">
             <button class="relative">
@@ -41,5 +43,22 @@
         </div>
     </nav>
   </header>
+
+  <section>
+    <div class="bg-gray-50 w-full h-64 flex flex-col-1 justify-around">
+        <div class="flex items-center justify-center w-1/2">
+            <div class="text-center">
+                <h1 class="font-hero font-semibold text-blue-700 text-3xl tracking-tighter">Season Sale</h1>
+                <p class="text-2xl font-serif font-bold">MEN'S FASHION</p>
+                <p class="font-normal font-serif tracking-wider">Min. 35-70% Off</p>
+                <button class="text-white text-xs uppercase bg-blue-700 border decoration-blue-700 px-3 py-1.5 tracking-tighter mb-2 transition-all duration-300 hover:bg-transparent hover:text-blue-700 cursor-pointer">shop now</button>
+                <button class="text-white text-xs uppercase bg-blue-700 border decoration-blue-700 px-3 py-1.5 tracking-tighter mb-2 transition-all duration-300 hover:bg-transparent hover:text-blue-700 cursor-pointer">read more</button>
+            </div>
+        </div>
+        <div>
+            <img class="object-contain w-80 h-full" src="/images/man.jpg" alt="">
+        </div>
+    </div>
+  </section>
 </body>
 </html>
