@@ -1,5 +1,6 @@
 import { products } from "../data/products.js";
-import { cart, cartQuantityUpdate, addToCart} from "../data/cart.js";
+import { cartQuantityUpdate, addToCart,} from "../data/cart.js";
+import { renderCart, totalCost } from "./checkout.js";
 
 const navBar = document.querySelector('.nav-bar');
 const menuBar = document.querySelector('.menu-bar');
@@ -49,5 +50,7 @@ document.querySelectorAll('.js-add-cart-btn').forEach((button) => {
         const productId = button.dataset.productId;
         addToCart(productId);
         cartQuantityUpdate();
+        renderCart();
+        totalCost();
     });
 });
