@@ -1,9 +1,5 @@
 node_modules/
 
-dist/
-build/
-output.css
-
 .env
 *.local
 
